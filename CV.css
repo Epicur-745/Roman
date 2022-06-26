@@ -1,0 +1,43 @@
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(66, 195, 212),rgb(154, 181, 212));
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins' sans-serif;
+    font-size: 20px;
+}
+.container
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+span
+{
+    font-size: 4rem;
+    font-family: 'Poppins',sans-serif;
+
+}
+#con
+{
+    letter-spacing: 10px;
+}
+.container >span
+{
+    animation: glow 5s ease-in-out infinite;
+}
+@keyframes glow {
+    0%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;
+    }
+    10%,90%
+    {
+        color: #111;
+        text-shadow: none;
+    } 
+}
+
